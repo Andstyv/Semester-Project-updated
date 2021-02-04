@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Rockwell", "Futura", sans-serif;
+  font-size: 1rem;
+  background-color: #e5dfbd;
+}
+
+.hero-index {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+  background-image: url(img/hero-bg-23.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6em 0;
+}
+
+.hero-index > * {
+  grid-column: 2 / -2;
+}
+
+@media (min-width: 768px) {
+  .hero-index > * {
+    grid-column: 2 / span 2;
+  }
+}
+
+.news-index,
+.upcoming-events,
+.footer {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+  margin-top: 4em;
+}
+
+@media (min-width: 768px) {
+  .news-index,
+  .upcoming-events {
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(200px, 400px)) minmax(
+        1em,
+        1fr
+      );
+  }
+}
+
+.event-info,
+.news-info,
+.footer-main {
+  grid-column: 2 / -2;
+}
+
+.news-info {
+  background-color: #00b8a9;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .event-info,
+  .news-info {
+    grid-column: span 1;
+  }
+  .event-info:first-child {
+    grid-column: 2 / span 1;
+  }
+  .news-info:first-child {
+    grid-column: 2 / span 3;
+  }
+}
+
+.event-info {
+  text-align: center;
+  padding: 0em 0;
+  margin: 0em 0;
+  background-color: #f6416c;
+}
+
+.header-items {
+  display: grid;
+  grid-template-columns:
+    minmax(1em, 1fr) minmax(0px, 100px) minmax(0px, 350px) minmax(0px, 50px)
+    minmax(1em, 1fr);
+}
+
+.nav-content-large,
+.nav-content-small {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .nav-content-large {
+    display: none;
+  }
+}
+
+.header {
+  background-color: #073b4c;
+}
+.logo {
+  grid-column: 2 / -4;
+}
+.nav {
+  grid-column: 4 / -2;
+  align-self: center;
+}
+.hours-txt {
+  grid-column: 3 / -3;
+  align-self: center;
+  color: #ffd166;
+}
+
+.logo-img {
+  max-width: 100px;
+  height: auto;
+}
+/* ----- HAMBURGER MENU ----- */
+
+.hamb-dropdown {
+  display: none;
+  position: absolute;
+  background-color: violet;
+}
+.hamb-dropdown a {
+  display: block;
+  text-decoration: none;
+  margin: 1em;
+}
+.hamb-btn {
+  background: transparent;
+  border: none;
+  font-size: 2em;
+  color: #ffd166;
+}
+#hamb-check {
+  display: none;
+}
+
+#hamb-check:checked ~ .hamb-dropdown {
+  display: block;
+}
+
+.footer {
+  background-color: #073b4c;
+}
+
+/* ----- FONTS AND COLOURS ----- */
+
+.hero-text {
+  color: #ffd166;
+}
