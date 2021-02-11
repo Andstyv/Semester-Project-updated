@@ -1,0 +1,124 @@
+/* ----- FONTS AND COLOURS ----- */
+
+.hero-text {
+  color: #ffd166;
+}
+
+/* ----- HERO PIC & CONTENT SETTINGS ----- */
+
+.hero-index {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 400px) minmax(1em, 1fr);
+  background-image: url(img/hero-bg-23.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-index > * {
+  grid-column: 2;
+}
+
+@media (min-width: 768px) {
+  .hero-index > * {
+    grid-column: 2 / span 2;
+  }
+}
+
+/* ----- OVERALL GRID SETTINGS ----- */
+
+.news-index,
+.upcoming-events,
+.footer {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) auto minmax(1em, 1fr);
+  margin-top: 4em;
+}
+
+@media (min-width: 768px) {
+  .news-index,
+  .upcoming-events {
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(200px, 400px)) minmax(1em, 1fr);
+  }
+}
+
+.event-info,
+.event-info-txt,
+.news-info,
+.footer-main {
+  grid-column: 2;
+}
+
+.news-info {
+  background-color: #00b8a9;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.event-info {
+  background-color: #f6416c;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/*
+  .event-info img {
+    object-fit: cover;
+    width: 100px;
+    max-height: 100%;
+  } */
+
+@media (min-width: 768px) {
+  .event-info,
+  .news-info {
+    grid-column: span 1;
+  }
+  .event-info:first-child {
+    grid-column: 2 / span 1;
+  }
+  .news-info:first-child {
+    grid-column: 2 / span 3;
+  }
+}
+
+/* ----- HEADER & NAVIGATION ----- */
+
+.header-items {
+  display: grid;
+  grid-template-columns:
+    minmax(1em, 1fr) minmax(0px, 100px) minmax(0px, 350px) minmax(0px, 50px)
+    minmax(1em, 1fr);
+}
+
+.nav-content-large,
+.nav-content-small {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .nav-content-large {
+    display: none;
+  }
+}
+
+.header {
+  background-color: #073b4c;
+}
+.logo {
+  grid-column: 2 / -4;
+}
+.nav {
+  grid-column: 4 / -2;
+  align-self: center;
+}
+.hours-txt {
+  grid-column: 3 / -3;
+  align-self: center;
+  color: #ffd166;
+}
+
+.logo-img {
+  max-width: 100px;
+  height: auto;
+}
