@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <title>Community Science Museum - INDEX</title>
+    <title>CSM - CONTACT</title>
     <script src="https://kit.fontawesome.com/35dab5c0f5.js" crossorigin="anonymous"></script>
   </head>
   <body class="bodygrid">
@@ -24,47 +24,52 @@
       <div class="nav-large">
         <ul class="links-lrg">
           <li><a href="explore_kids.html">Explore</a></li>
-          <li><a href="#">Visit</a></li>
+          <li><a href="visit.html">Visit</a></li>
           <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="#">Get involved</a></li>
-          <li><a href="#" class="ticketlink">Buy ticket</a></li>
+          <li><a href="support.html">Get involved</a></li>
+          <li><a href="tickets.html" class="ticketlink">Tickets</a></li>
         </ul>
       </div>
     </nav>
-    <header class="header-kids">
+    <header class="header">
       <div class="hero-text">
         <h1>Explore together</h1>
       </div>
     </header>
     <main class="main">
-      <section class="kids-explore">
-        <div class="k-exp-text">
-          <h2>Explore - for kids</h2>
+      <section class="contact-main">
+        <div class="contact-txt">
+          <h2>Contact us</h2>
         </div>
-        <div class="k-explore1">
-          <h3>There´s plenty to see and do at our museum</h3>
-          <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
-          <div class="woolly-pic">
-            <img src="img/mam1.png" />
-          </div>
+        <div class="contact1">
+          <select class="contact-select">
+            <option value="" selected disabled hidden>Select reason</option>
+            <option value="1">Reason 1</option>
+            <option value="2">Reason 2</option>
+            <option value="3">Reason 3</option>
+          </select>
+          <input type="text" name="contact-name" class="contact-name" placeholder="Name" />
+          <input type="email" name="contact-mail" class="contact-mail" placeholder="E-mail" />
+          <input type="tel" name="contact-tel" class="contact-tel" placeholder="Telephone" />
+          <textarea id="contact-msg" name="contact-msg" placeholder="Write your text here"></textarea>
+          <input type="submit" class="contact-submit" value="Send" />
         </div>
-        <div class="k-explore2">
-          <h3>Young Stars Club</h3>
-          <p class="ysc-txt">Explore and experiment with our scientists!</p>
-          <p class="ysc-txt2">Saturdays from 10:00 to 13:00</p>
-        </div>
-        <div class="k-explore3">
-          <h3>Winter holiday club</h3>
-          <p>Join us in a journey of discovery this winter holiday</p>
-          <p>More info coming soon. Stay tuned by subscribing to our newsletter!</p>
-        </div>
+        <!---
+        <div class="contact2">
+          <h3>Volunteer</h3>
+          <p class="vol-txt">
+            A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff
+            and volunteers come together to discuss ideas for future exhibits and strategies for the museum.
+          </p>
+          <p class="vol-txt">You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
+        </div> -->
       </section>
     </main>
     <footer class="footer">
       <div class="newsletter">
-        <p>Sign up for our newsletter!</p>
         <input type="email" placeholder="Email" />
         <button type="submit">GO</button>
+        <p class="footer-txt">Sign up for our newsletter!</p>
       </div>
       <div class="footerlinks1">
         <ul>
