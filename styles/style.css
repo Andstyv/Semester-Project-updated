@@ -305,11 +305,11 @@ p {
 .newsletter-subscribe {
   text-decoration: none;
   font-size: 0.7em;
-  background: grey;
   padding: 0.25em;
   border-radius: 5px;
   font-style: italic;
   text-align: center;
+  border: 1px solid #ffd166;
 }
 
 @media (min-width: 1224px) {
@@ -364,9 +364,7 @@ p {
   flex-direction: column;
   box-shadow: 5px 5px 5px grey;
 }
-.news1 h3 {
-  text-align: center;
-}
+
 .news1 p {
   margin-left: 0.25em;
   margin-right: 0.25em;
@@ -398,7 +396,7 @@ p {
     grid-template-rows: auto auto auto;
   }
   .news1 p {
-    margin: 0 2em;
+    margin: 2em 2em 0 2em;
   }
   .newstxt1 {
     grid-row: 2;
@@ -417,7 +415,7 @@ p {
     display: block;
     grid-row: 2 / span 2;
     grid-column: 1;
-    border-radius: 0 10px 0 10px;
+    border-radius: 10px 0 0 10px;
     max-width: 600px;
     height: auto;
   }
