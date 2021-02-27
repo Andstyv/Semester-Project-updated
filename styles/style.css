@@ -178,11 +178,12 @@ p {
     display: none;
   }
   .entry {
-    background: #f6416c;
+    border: 2px solid #ffd166;
     padding: 0.5em 0.5em;
     border-radius: 10px;
     color: white;
     margin-left: 2em;
+    text-transform: uppercase;
   }
   .links-lrg {
     display: flex;
