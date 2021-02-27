@@ -367,8 +367,8 @@ p {
 }
 
 .news1 p {
-  margin-left: 0.25em;
-  margin-right: 0.25em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .news1 a {
   margin-bottom: 1em;
@@ -381,6 +381,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 1em;
 }
 .news-img img {
   width: 150px;
@@ -577,11 +578,11 @@ p {
   grid-area: exhibit5;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(img/ex3-2.jpg);
 }
-.exhibit1 h3,
-.exhibit2 h3,
-.exhibit3 h3,
-.exhibit4 h3,
-.exhibit5 h3 {
+.exhibit1 h2,
+.exhibit2 h2,
+.exhibit3 h2,
+.exhibit4 h2,
+.exhibit5 h2 {
   text-align: center;
 }
 
@@ -837,7 +838,7 @@ p {
 .visit3 p {
   font-size: 0.9em;
 }
-.visit3 h3 {
+.visit3 h2 {
   grid-column: 1 / span 2;
   justify-self: center;
 }
@@ -1091,4 +1092,8 @@ p {
 .mail-copy {
   text-align: center;
   font-style: italic;
+}
+.contact1 label {
+  margin-bottom: 0;
+  font-size: 0.9em;
 }
