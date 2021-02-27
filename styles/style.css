@@ -686,11 +686,12 @@ p {
   color: white;
   box-shadow: 5px 5px 5px grey;
 }
-.k-explore2 h3 {
+.k-explore2 h2 {
   background-color: #f6416c;
   justify-self: flex-start;
   padding: 0 0.5em;
   border-radius: 0 10px 10px 0;
+  color: black;
 }
 .k-explore3 {
   display: flex;
@@ -703,7 +704,7 @@ p {
   box-shadow: 5px 5px 5px grey;
   text-align: center;
 }
-.k-explore3 h3 {
+.k-explore3 h2 {
   background-color: #073b4c;
   align-self: center;
   padding: 0 0.5em 0 0.5em;
@@ -872,7 +873,6 @@ p {
 }
 .entrance {
   font-weight: 600;
-  color: #ffd166;
 }
 .weekdays {
   grid-column: 1;

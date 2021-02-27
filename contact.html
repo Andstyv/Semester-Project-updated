@@ -71,8 +71,9 @@
         </div>
         <div class="contact1">
           <h2>Contact form</h2>
-          <select class="contact-select">
-            <option value="" selected disabled hidden>Select reason</option>
+          <label for="contact-select">Select reason for contacting us</label>
+          <select class="contact-select" id="contact-select">
+            <option value="" selected disabled hidden>Reason</option>
             <option value="1">General</option>
             <option value="2">Tour booking</option>
             <option value="3">For teachers</option>
@@ -80,10 +81,14 @@
             <option value="5">Support or volunteer work</option>
             <option value="6">Internships</option>
           </select>
-          <input type="text" name="contact-name" class="contact-name" placeholder="Name" />
-          <input type="email" name="contact-mail" class="contact-mail" placeholder="E-mail" />
-          <input type="tel" name="contact-tel" class="contact-tel" placeholder="Telephone" />
-          <textarea id="contact-msg" name="contact-msg" placeholder="Write your text here"></textarea>
+          <label for="contact-name">Your name</label>
+          <input type="text" name="contact-name" class="contact-name" />
+          <label for="contact-mail">E-mail address</label>
+          <input type="email" name="contact-mail" class="contact-mail" />
+          <label for="contact-tel">Telephone number</label>
+          <input type="tel" name="contact-tel" class="contact-tel" />
+          <label for="contact-msg">Write your text here</label>
+          <textarea id="contact-msg" name="contact-msg"></textarea>
           <a class="contact-send" href="contact_success.html">Send</a>
         </div>
       </section>
