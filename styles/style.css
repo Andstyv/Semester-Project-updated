@@ -302,13 +302,21 @@ p {
   margin: 0.5em 0;
   justify-content: space-between;
 }
+.newsletter-subscribe {
+  text-decoration: none;
+  font-size: 0.7em;
+  background: grey;
+  padding: 0.25em;
+  border-radius: 5px;
+  font-style: italic;
+  text-align: center;
+}
 
 @media (min-width: 1224px) {
   .newsletter {
     justify-content: space-evenly;
   }
-  .newsletter input,
-  .newsletter button {
+  .newsletter input {
     font-size: 0.5em;
   }
 }
@@ -322,7 +330,10 @@ p {
 @media (min-width: 1224px) {
   .newsletter,
   .footerlinks2 {
-    font-size: 2em;
+    font-size: 1.75em;
+  }
+  .newsletter-subscribe {
+    font-size: 0.5em;
   }
   .footer {
     justify-content: space-evenly;
@@ -1065,4 +1076,20 @@ p {
   margin-right: 1em;
   color: #073b4c;
   font-size: 2em;
+}
+.contact-send {
+  text-decoration: none;
+  background: #073b4c;
+  align-self: center;
+  color: white;
+  padding: 0.5em;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.contact-success {
+  text-align: center;
+}
+.mail-copy {
+  text-align: center;
+  font-style: italic;
 }
