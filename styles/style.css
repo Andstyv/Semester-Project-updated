@@ -255,6 +255,9 @@ p {
   border-left: 1px dotted #ffd166;
   border-right: 1px dotted #ffd166;
 }
+.footerlinks1 a {
+  text-decoration: none;
+}
 
 @media (min-width: 1224px) {
   .footerlinks1 {
@@ -274,6 +277,9 @@ p {
     font-weight: bold;
     text-transform: uppercase;
   }
+  .footer-contact {
+    text-align: center;
+  }
 }
 .footerlinks2,
 .footerlinks1 {
@@ -290,9 +296,6 @@ p {
   list-style: none;
   font-size: 50%;
   color: white;
-}
-.footerlinks1 a {
-  text-decoration: none;
 }
 .footer-txt {
   color: white;
