@@ -71,32 +71,35 @@
         </div>
         <div class="contact1">
           <h2>Contact form</h2>
-          <label for="contact-select">Select reason for contacting us</label>
-          <select class="contact-select" id="contact-select">
-            <option value="" selected disabled hidden>Reason</option>
-            <option value="1">General</option>
-            <option value="2">Tour booking</option>
-            <option value="3">For teachers</option>
-            <option value="4">Researchers</option>
-            <option value="5">Support or volunteer work</option>
-            <option value="6">Internships</option>
-          </select>
-          <label for="contact-name">Your name</label>
-          <input type="text" name="contact-name" class="contact-name" />
-          <label for="contact-mail">E-mail address</label>
-          <input type="email" name="contact-mail" class="contact-mail" />
-          <label for="contact-tel">Telephone number</label>
-          <input type="tel" name="contact-tel" class="contact-tel" />
-          <label for="contact-msg">Write your text below</label>
-          <textarea id="contact-msg" name="contact-msg"></textarea>
-          <a class="contact-send" href="contact_success.html">Send</a>
+          <form action="contact_success.html" method="POST">
+            <label for="contact-select">Select reason for contacting us</label>
+            <select class="contact-select" id="contact-select">
+              <option value="" selected disabled hidden>Reason</option>
+              <option value="1">General</option>
+              <option value="2">Tour booking</option>
+              <option value="3">For teachers</option>
+              <option value="4">Researchers</option>
+              <option value="5">Support or volunteer work</option>
+              <option value="6">Internships</option>
+            </select>
+            <label for="contact-name">Your name</label>
+            <input type="text" name="contact-name" class="contact-name" id="contact-name" />
+            <label for="contact-mail">E-mail address</label>
+            <input type="email" name="contact-mail" class="contact-mail" id="contact-mail" />
+            <label for="contact-tel">Telephone number</label>
+            <input type="tel" name="contact-tel" class="contact-tel" id="contact-tel" />
+            <label for="contact-msg">Write your text below</label>
+            <textarea id="contact-msg" name="contact-msg" id="contact-msg"></textarea>
+            <a class="contact-send" href="contact_success.html">Send</a>
+          </form>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="newsletter">
-        <input type="email" placeholder="Email" />
-        <a class="newsletter-subscribe" href="newsletter_success.html">Sign up for our newsletter</a>
+        <input type="email" placeholder="Email" id="news-email" />
+        <a class="newsletter-subscribe" href="newsletter_success.html">OK</a>
+        <label for="news-email">Sign up for our newsletter</label>
       </div>
       <div class="footerlinks1">
         <ul>

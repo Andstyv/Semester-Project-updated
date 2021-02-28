@@ -2,6 +2,7 @@
 /* ---------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;1,300;1,900&family=Comfortaa&display=swap");
+
 body {
   margin: 0;
   font-size: 1rem;
@@ -9,7 +10,6 @@ body {
   background-image: url(img/BG_pattern6.png);
   font-family: "montserrat", sans-serif, "Times New Roman", Times, serif;
 }
-
 h1 {
   font-size: 2em;
   font-family: "roboto slab", sans-serif;
@@ -58,7 +58,6 @@ p {
 .header {
   background-image: linear-gradient(0deg, rgba(229, 223, 189, 0.2) 1%, rgba(7, 59, 76, 1) 100%), url(img/bg90.jpg);
 }
-
 .header-kids {
   background-image: linear-gradient(0deg, rgba(229, 223, 189, 0.2) 1%, rgba(7, 59, 76, 1) 100%), url(img/kids-explore.jpg);
 }
@@ -125,16 +124,43 @@ p {
 .fa-clock {
   margin-right: 0.5em;
 }
-
-@media (min-width: 1224px) {
-  .hours-txt {
-    display: none;
-  }
-}
 .nav-content-small {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+@media (min-width: 1224px) {
+  .hours-txt,
+  .hambicon,
+  .opening-hours,
+  .fa-clock {
+    display: none;
+  }
+  .entry {
+    border: 2px solid #ffd166;
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    color: white;
+    margin-left: 2em;
+    text-transform: uppercase;
+  }
+  .links-lrg {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0.25em 0;
+  }
+  .links-lrg a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+  .links-lrg a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  .nav-small {
+    display: none;
+  }
 }
 
 /* ----- HAMBURGER MENU ---- */
@@ -170,40 +196,6 @@ p {
   font-size: 2em;
 }
 
-@media (min-width: 1224px) {
-  .hours-txt,
-  .hambicon,
-  .opening-hours,
-  .fa-clock {
-    display: none;
-  }
-  .entry {
-    border: 2px solid #ffd166;
-    padding: 0.5em 0.5em;
-    border-radius: 10px;
-    color: white;
-    margin-left: 2em;
-    text-transform: uppercase;
-  }
-  .links-lrg {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    margin: 0.25em 0;
-  }
-  .links-lrg a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1em;
-  }
-  .links-lrg a:hover {
-    border-bottom: 2px solid #fff;
-  }
-  .nav-small {
-    display: none;
-  }
-}
-
 /* ----- LOGO ----- */
 .logoimg {
   display: flex;
@@ -214,12 +206,6 @@ p {
 .logoimg p {
   display: none;
 }
-.logotext p {
-  margin: 0;
-  text-decoration: none;
-  font-family: "Chivo";
-}
-
 @media (min-width: 1224px) {
   .logoimg p {
     display: flex;
@@ -227,7 +213,11 @@ p {
     color: white;
   }
 }
-
+.logotext p {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Chivo";
+}
 .logoimg img {
   max-width: 100%;
   height: 70px;
@@ -280,6 +270,11 @@ p {
   .footer-contact {
     text-align: center;
   }
+  .footer-contact a {
+    border: 1px solid #ffd166;
+    padding: 0.25em;
+    border-radius: 5px;
+  }
 }
 .footerlinks2,
 .footerlinks1 {
@@ -301,28 +296,27 @@ p {
   color: white;
 }
 .newsletter {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   margin: 0.5em 0;
   justify-content: space-between;
 }
+.newsletter label {
+  color: white;
+  font-size: 0.75em;
+  grid-column: 1 / span 2;
+}
 .newsletter-subscribe {
+  align-self: center;
+  padding: 5px;
+  text-align: center;
   text-decoration: none;
   font-size: 0.7em;
-  padding: 0.25em;
   border-radius: 5px;
   font-style: italic;
   text-align: center;
   border: 1px solid #ffd166;
-}
-
-@media (min-width: 1224px) {
-  .newsletter {
-    justify-content: space-evenly;
-  }
-  .newsletter input {
-    font-size: 0.5em;
-  }
 }
 .newsletter p {
   font-size: 0.5em;
@@ -330,9 +324,18 @@ p {
   color: white;
   margin-bottom: 0;
 }
-
 @media (min-width: 1224px) {
-  .newsletter,
+  .newsletter {
+    justify-content: space-evenly;
+    font-size: 1.75em;
+  }
+  .newsletter input {
+    font-size: 0.5em;
+  }
+  #news-email {
+    align-self: center;
+    margin-right: 1em;
+  }
   .footerlinks2 {
     font-size: 1.75em;
   }
@@ -356,11 +359,6 @@ p {
   font-size: 1.5em;
   margin: 1em 0;
 }
-@media (min-width: 1224px) {
-  .news-head h1 {
-    margin-top: 2em;
-  }
-}
 .news1 {
   background-color: #ffd166;
   border-radius: 10px;
@@ -368,7 +366,6 @@ p {
   flex-direction: column;
   box-shadow: 5px 5px 5px grey;
 }
-
 .news1 p {
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -381,15 +378,6 @@ p {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 0.25em;
-}
-@media (min-width: 1224px) {
-  .news-head-text {
-    grid-column: 2;
-    margin: 0;
-  }
-  .news1 p {
-    margin: 1em 1em 0 1em;
-  }
 }
 .energ-img {
   display: none;
@@ -407,6 +395,13 @@ p {
   height: auto;
 }
 @media (min-width: 1224px) {
+  .news-head h1 {
+    margin-top: 2em;
+  }
+  .news-head-text {
+    grid-column: 2;
+    margin: 0;
+  }
   .news-img {
     display: none;
   }
@@ -414,6 +409,9 @@ p {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
+  }
+  .news1 p {
+    margin: 1em 1em 0 1em;
   }
   .newstxt1 {
     grid-row: 2;
@@ -448,7 +446,6 @@ p {
     "event2"
     "event3";
 }
-
 @media (min-width: 1224px) {
   .events {
     grid-template-areas:
@@ -600,7 +597,6 @@ p {
 .exhibit5 h2 {
   text-align: center;
 }
-
 @media (min-width: 1224px) {
   .exhibitions {
     grid-template-areas:
@@ -664,7 +660,6 @@ p {
 
 /* ----- EXPLORE SECTION ----- */
 /* ------------------------ */
-
 .kids-explore {
   gap: 1em;
   display: grid;
@@ -756,14 +751,6 @@ p {
   .k-explore1 h3 {
     grid-column: 1 / span 2;
   }
-  .woolly-pic {
-    grid-row: 2;
-    grid-column: 2;
-  }
-  .woolly-pic img {
-    width: 100%;
-  }
-
   .k-explore2 {
     grid-row: 2;
     grid-column: 3 / -1;
@@ -774,6 +761,13 @@ p {
     background-position: center;
     background-size: cover;
     background-color: #fff;
+  }
+  .woolly-pic {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .woolly-pic img {
+    width: 100%;
   }
 }
 .fa-star,
@@ -907,7 +901,6 @@ p {
   padding-left: 0;
   list-style: none;
 }
-
 @media (min-width: 1224px) {
   .visit-main {
     display: grid;
@@ -975,7 +968,6 @@ p {
     margin-bottom: 2em;
   }
 }
-
 .involved-txt {
   grid-area: get-involved;
 }
@@ -1026,11 +1018,16 @@ p {
 
 /* ----- CONTACT SECTION ----- */
 /* ------------------------ */
-
 .contact-main {
   margin-bottom: 2em;
 }
-.contact1 {
+.contact2 {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #ffd166;
+  padding: 2em;
+}
+.contact1 form {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -1038,11 +1035,6 @@ p {
   padding: 2em;
   border-radius: 10px;
   box-shadow: 5px 5px 5px grey;
-}
-@media (min-width: 1224px) {
-  .contact-txt {
-    margin-top: 2em;
-  }
 }
 .contact-name,
 .contact-mail,
@@ -1061,6 +1053,9 @@ p {
 }
 
 @media (min-width: 1224px) {
+  .contact-txt {
+    margin-top: 2em;
+  }
   .contact1 {
     max-width: 800px;
     min-width: 600px;
@@ -1069,6 +1064,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact-social ul {
+    font-size: 1.2em;
+    margin-bottom: 4em;
   }
 }
 .contact-social {
@@ -1079,13 +1078,6 @@ p {
   list-style: none;
   font-size: 0.8em;
   margin-bottom: 2em;
-}
-
-@media (min-width: 1224px) {
-  .contact-social ul {
-    font-size: 1.2em;
-    margin-bottom: 4em;
-  }
 }
 .contact-social i {
   margin-right: 1em;
