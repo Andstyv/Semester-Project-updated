@@ -62,13 +62,13 @@ p {
 .header-kids {
   background-image: linear-gradient(0deg, rgba(229, 223, 189, 0.2) 1%, rgba(7, 59, 76, 1) 100%), url(img/kids-explore.jpg);
 }
-.hero-text1 h4 {
+.hero-text1 p {
   font-size: 1.5em;
   color: #ffd166;
   font-family: "Comfortaa";
   font-weight: 400;
 }
-.hero-text2 h5 {
+.hero-text2 p {
   font-weight: 400;
   font-family: "Comfortaa";
   color: #ffd166;
