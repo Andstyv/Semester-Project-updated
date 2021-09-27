@@ -38,7 +38,10 @@ p {
 .navbar {
   position: sticky;
   top: 0;
+  margin: 0 auto;
   display: flex;
+  width: 100%;
+  max-width: 1400px;
   grid-column: 1 / span 3;
   grid-row: 1;
   background-color: #073b4c;
