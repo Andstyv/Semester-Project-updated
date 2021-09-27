@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact us to give feedback, book tours, or get in touch with our research or teacing departments" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>CSM - Contact</title>
+    <script src="https://kit.fontawesome.com/35dab5c0f5.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bodygrid">
+    <nav class="navbar">
+      <a class="logoimg" href="index.html">
+        <img src="img/logo-png.png" alt="Community Science Museum logo image" />
+        <div class="logotext">
+          <p>Community</p>
+          <p>Science Museum</p>
+        </div>
+      </a>
+      <div class="hours-txt">
+        <i class="far fa-clock"></i>
+        <div class="opening-hours">
+          <p class="opening-p">OPENING HOURS</p>
+          <p class="opening-p">09:00 - 13:00</p>
+        </div>
+      </div>
+      <div class="nav-large">
+        <ul class="links-lrg">
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="support.html">Get involved</a></li>
+          <li><a href="contact.html" style="color: #ffd166">Contact</a></li>
+          <li><p class="entry">Free entry</p></li>
+        </ul>
+      </div>
+      <div class="nav-small">
+        <ul class="nav-content-small">
+          <li class="nav-item">
+            <button type="submit" class="hamb-btn"></button>
+            <label for="hamb-check"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamb-check" />
+            <div class="hamb-dropdown">
+              <a href="explore.html">Explore</a>
+              <a href="visit.html">Visit</a>
+              <a href="exhibitions.html">Exhibitions</a>
+              <a href="support.html">Support</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="hero-text1">
+        <p>Community Science Museum</p>
+      </div>
+      <div class="hero-text2"><p>Explore Together</p></div>
+    </header>
+    <main class="main">
+      <section class="contact-main">
+        <div class="contact-txt">
+          <h1>Contact us</h1>
+        </div>
+        <div class="contact-social">
+          <ul>
+            <li><i class="fab fa-facebook-square"></i>www.fb.com/CommunityScienceMuseum</li>
+            <li><i class="fab fa-instagram-square"></i>#CommunityScienceMuseum</li>
+            <li><i class="fab fa-twitter-square"></i>@CommunityScienceMuseum</li>
+          </ul>
+        </div>
+        <div class="contact1">
+          <h2>Contact form</h2>
+          <form action="contact_success.html" method="POST">
+            <label for="contact-select">Select reason for contacting us</label>
+            <select class="contact-select" id="contact-select">
+              <option value="" selected disabled hidden>Reason</option>
+              <option value="1">General</option>
+              <option value="2">Tour booking</option>
+              <option value="3">For teachers</option>
+              <option value="4">Researchers</option>
+              <option value="5">Support or volunteer work</option>
+              <option value="6">Internships</option>
+            </select>
+            <label for="contact-name">Your name</label>
+            <input type="text" name="contact-name" class="contact-name" id="contact-name" />
+            <label for="contact-mail">E-mail address</label>
+            <input type="email" name="contact-mail" class="contact-mail" id="contact-mail" />
+            <label for="contact-tel">Telephone number</label>
+            <input type="tel" name="contact-tel" class="contact-tel" id="contact-tel" />
+            <label for="contact-msg">Write your text below</label>
+            <textarea id="contact-msg" name="contact-msg" id="contact-msg"></textarea>
+            <a class="contact-send" href="contact_success.html">Send</a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="newsletter">
+        <input type="email" placeholder="Email" id="news-email" />
+        <a class="newsletter-subscribe" href="newsletter_success.html">OK</a>
+        <label for="news-email">Sign up for our newsletter</label>
+      </div>
+      <div class="footerlinks1">
+        <ul>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li>
+            <i class="fab fa-twitter-square"></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram-square"></i>
+          </li>
+        </ul>
+        <div class="footer-contact">
+          <a href="contact.html" class="footer-contact">Contact us</a>
+        </div>
+      </div>
+      <div class="footerlinks2">
+        <ul>
+          <li>LONDON</li>
+          <li>221B Baker St, Marylebone</li>
+          <li>London NW1 6XE</li>
+          <li>(020) 2736 9122</li>
+          <li>mail@museum.co.uk</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
