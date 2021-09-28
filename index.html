@@ -24,14 +24,14 @@
           <li class="nav-item"><a href="explore.html">Exhibitions</a></li>
           <li class="nav-item"><a href="explore.html">Get Involved</a></li>
           <li class="nav-item"><a href="explore.html">Contact</a></li>
-          <li class="nav-item">Free Entry</li>
+          <li class="nav-item free-entry">Free Entry</li>
         </ul>
       </nav>
       <div class="hours-txt">
         <i class="far fa-clock"></i>
         <div class="opening-hours">
-          <p class="opening-p">OPEN TODAY</p>
-          <p class="opening-p">10:00 - 16:00</p>
+          <p class="opening-txt">OPEN TODAY</p>
+          <p class="opening-txt-hours">10:00 - 16:00</p>
         </div>
       </div>
       <button class="hamb-button"><i class="fas fa-bars"></i></button>
@@ -66,7 +66,7 @@
         <div class="events-text">
           <h2>Upcoming events</h2>
         </div>
-        <div class="event1">
+        <div class="event-def event1">
           <img src="img/event1-prof.jpg" alt="Image of a female professor holding a book and looking into the camera" />
           <h3>Visiting Professor of Aeronautics</h3>
           <p class="event-date">08 FEB</p>
@@ -75,7 +75,7 @@
             lies in this exciting ‘space’.
           </p>
         </div>
-        <div class="event2">
+        <div class="event-def event2">
           <img src="img/event2-night.jpg" alt="Overview image of an old museums open hallway in dimmed lightning" />
           <h3>Night in the Museum</h3>
           <p class="event-date">21 APR</p>
@@ -84,7 +84,7 @@
             exploring the wonders of science.
           </p>
         </div>
-        <div class="event3">
+        <div class="event-def event3">
           <img src="img/event3-dino.jpg" alt="Image of dinosaurs with sand blowing up around them" />
           <h3>Real life Jurassic Park</h3>
           <p class="event-date">04 MAY</p>
@@ -94,12 +94,14 @@
     </main>
     <footer class="footer">
       <div class="newsletter">
-        <input type="email" placeholder="Email" id="news-email" />
-        <a class="newsletter-subscribe" href="newsletter_success.html">OK</a>
         <label for="news-email">Sign up for our newsletter</label>
+        <div class="email-sub-success">Thank you for subscribing!</div>
+        <input type="email" placeholder="Email" id="news-email" />
+
+        <button class="newsletter-subscribe" href="newsletter_success.html">Subscribe</button>
       </div>
-      <div class="footerlinks1">
-        <ul>
+      <div class="footer-social">
+        <ul class="footer-social-list">
           <li><i class="fab fa-facebook-square"></i></li>
           <li>
             <i class="fab fa-twitter-square"></i>
@@ -112,8 +114,8 @@
           <a href="contact.html" class="footer-contact">Contact us</a>
         </div>
       </div>
-      <div class="footerlinks2">
-        <ul>
+      <div class="footer-address">
+        <ul class="footer-address-list">
           <li>LONDON</li>
           <li>221B Baker St, Marylebone</li>
           <li>London NW1 6XE</li>
