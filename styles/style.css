@@ -488,7 +488,7 @@ p {
   grid-area: event3;
 }
 .event-def {
-  background-color: #f6416c;
+  background-color: #ff9fb5;
   margin-bottom: 4em;
   border-radius: 10px;
   display: flex;
@@ -647,7 +647,7 @@ p {
   margin-top: 4em;
 }
 .research-explore {
-  background-color: #f6416c;
+  background-color: #ff9fb5;
   margin: 2em 0;
 }
 .k-explore1 {
@@ -782,7 +782,7 @@ p {
 }
 .visit2 {
   grid-area: admission;
-  background-color: #f6416c;
+  background-color: #ff9fb5;
   border-radius: 10px;
   text-align: center;
   padding-left: 1em;
@@ -960,7 +960,7 @@ p {
 }
 .support3 {
   grid-area: internships;
-  background-color: #f6416c;
+  background-color: #ff9fb5;
 }
 .support4 {
   display: flex;
