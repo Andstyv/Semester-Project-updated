@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/35dab5c0f5.js" crossorigin="anonymous"></script>
   </head>
   <body class="bodygrid">
-    <nav class="navbar">
+    <section class="site-top">
       <a class="logoimg" href="index.html">
         <img src="img/logo-png.png" alt="Community Science Museum logo image" />
         <div class="logotext">
@@ -17,40 +17,25 @@
           <p>Science Museum</p>
         </div>
       </a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="explore.html">Explore</a></li>
+          <li class="nav-item"><a href="visit.html">Visit</a></li>
+          <li class="nav-item"><a href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item"><a href="support.html">Get Involved</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item free-entry">Free Entry</li>
+        </ul>
+      </nav>
       <div class="hours-txt">
         <i class="far fa-clock"></i>
         <div class="opening-hours">
-          <p class="opening-p">OPENING HOURS</p>
-          <p class="opening-p">09:00 - 13:00</p>
+          <p class="opening-txt">OPEN TODAY</p>
+          <p class="opening-txt-hours">10:00 - 16:00</p>
         </div>
       </div>
-      <div class="nav-large">
-        <ul class="links-lrg">
-          <li><a href="explore.html">Explore</a></li>
-          <li><a href="visit.html">Visit</a></li>
-          <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="support.html" style="color: #ffd166">Get involved</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><p class="entry">Free entry</p></li>
-        </ul>
-      </div>
-      <div class="nav-small">
-        <ul class="nav-content-small">
-          <li class="nav-item">
-            <button type="submit" class="hamb-btn"></button>
-            <label for="hamb-check"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="hamb-check" />
-            <div class="hamb-dropdown">
-              <a href="explore.html">Explore</a>
-              <a href="visit.html">Visit</a>
-              <a href="exhibitions.html">Exhibitions</a>
-              <a href="support.html">Support</a>
-              <a href="contact.html">Contact</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <button class="hamb-button"><i class="fas fa-bars"></i></button>
+    </section>
     <header class="header">
       <div class="hero-text1">
         <p>Community Science Museum</p>
@@ -97,12 +82,14 @@
     </main>
     <footer class="footer">
       <div class="newsletter">
-        <input type="email" placeholder="Email" id="news-email" />
-        <a class="newsletter-subscribe" href="newsletter_success.html">OK</a>
         <label for="news-email">Sign up for our newsletter</label>
+        <div class="email-sub-success">Thank you for subscribing!</div>
+        <input type="email" placeholder="Email" id="news-email" />
+
+        <button class="newsletter-subscribe" href="newsletter_success.html">Subscribe</button>
       </div>
-      <div class="footerlinks1">
-        <ul>
+      <div class="footer-social">
+        <ul class="footer-social-list">
           <li><i class="fab fa-facebook-square"></i></li>
           <li>
             <i class="fab fa-twitter-square"></i>
@@ -115,8 +102,8 @@
           <a href="contact.html" class="footer-contact">Contact us</a>
         </div>
       </div>
-      <div class="footerlinks2">
-        <ul>
+      <div class="footer-address">
+        <ul class="footer-address-list">
           <li>LONDON</li>
           <li>221B Baker St, Marylebone</li>
           <li>London NW1 6XE</li>
