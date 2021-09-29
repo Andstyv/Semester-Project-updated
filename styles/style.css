@@ -1074,3 +1074,20 @@ p {
   margin-bottom: 0;
   font-size: 0.9em;
 }
+
+/* ----- CONTACT FORM VALIDATION ----- */
+.form-error {
+  color: #ff0000;
+  display: none;
+  height: 19px;
+  font-size: 12px;
+}
+#nameError {
+  height: 19px;
+}
+.contact-form {
+  min-height: 320px;
+}
+.contact-form-success {
+  margin: 0 auto;
+}

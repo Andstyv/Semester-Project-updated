@@ -71,7 +71,7 @@
         </div>
         <div class="contact1">
           <h2>Contact form</h2>
-          <form action="contact_success.html" method="POST">
+          <form action="contact_success.html" method="POST" class="contact-form">
             <label for="contact-select">Select reason for contacting us</label>
             <select class="contact-select" id="contact-select">
               <option value="" selected disabled hidden>Reason</option>
@@ -82,15 +82,20 @@
               <option value="5">Support or volunteer work</option>
               <option value="6">Internships</option>
             </select>
+            <div class="form-error" id="reasonError">Please select a reason</div>
             <label for="contact-name">Your name</label>
             <input type="text" name="contact-name" class="contact-name" id="contact-name" />
+            <div class="form-error" id="nameError">Please enter a valid name (min. 3 char.)</div>
             <label for="contact-mail">E-mail address</label>
             <input type="email" name="contact-mail" class="contact-mail" id="contact-mail" />
+            <div class="form-error" id="mailError">Please enter a valid E-mail</div>
             <label for="contact-tel">Telephone number</label>
             <input type="tel" name="contact-tel" class="contact-tel" id="contact-tel" />
+            <div class="form-error" id="telError">Please enter a valid phone number (min. 8 numbers)</div>
             <label for="contact-msg">Write your text below</label>
             <textarea id="contact-msg" name="contact-msg" id="contact-msg"></textarea>
-            <a class="contact-send" href="contact_success.html">Send</a>
+            <div class="form-error" id="msgError">Please enter a valid message (min. 10 char.)</div>
+            <button type="submit" class="submit-form-btn">SEND</button>
           </form>
         </div>
       </section>
@@ -125,5 +130,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/contactForm.js"></script>
   </body>
 </html>
