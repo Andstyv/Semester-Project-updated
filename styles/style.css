@@ -488,6 +488,11 @@ p {
   max-width: 450px;
   justify-self: center;
 }
+.event-def img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
 
 .event-def h3 {
   margin: 1em 0.5em 0 0.5em;
