@@ -95,6 +95,9 @@ p {
     border-radius: 0 0 10px 10px;
     grid-template-rows: minmax(auto, 200px) minmax(auto, 100px);
   }
+  .main {
+    margin-bottom: 80px;
+  }
   .hero-text1 {
     justify-self: flex-start;
     font-size: 2em;
@@ -904,6 +907,7 @@ p {
       "hours location food"
       "admission admission shop";
     gap: 1em;
+    margin-bottom: 80px;
   }
   .visit2 {
     display: flex;
