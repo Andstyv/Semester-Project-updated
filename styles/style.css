@@ -140,6 +140,9 @@ p {
   text-decoration: none;
   color: #fff;
 }
+.nav-active a {
+  color: #ffd166;
+}
 
 .hours-txt {
   grid-row: 1;
@@ -514,12 +517,23 @@ p {
   display: flex;
   line-height: 1.5;
 }
+.event-txt p {
+  margin: 0;
+}
 .event-date {
   align-self: flex-end;
   margin: 0;
   background-color: #ffd166;
   padding: 0.5em;
   border-radius: 10px 0 0 10px;
+}
+.event-date p {
+  margin: 0;
+}
+.event-head-img {
+  max-height: 300px;
+  max-width: auto;
+  object-fit: cover;
 }
 
 /* ----- EXHIBITIONS SECTION ----- */
