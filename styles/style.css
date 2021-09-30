@@ -86,7 +86,7 @@ p {
   grid-template-columns: 1em auto auto 1em;
   grid-template-rows: auto auto;
 }
-
+/* --- GRID LARGE SCREENS --- */
 @media (min-width: 1224px) {
   .header,
   .header-kids {
@@ -160,6 +160,7 @@ p {
   color: #ffd166;
 }
 
+/* --- NAV LARGE SCREENS --- */
 @media (min-width: 1224px) {
   .navbar {
     display: flex;
@@ -202,6 +203,19 @@ p {
     color: #000;
     background-color: #ffd166;
   }
+  .hamb-button {
+    display: none;
+  }
+  .logoimg {
+    margin: 10px 30px;
+    grid-column: 2;
+  }
+
+  .logoimg p {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
 }
 
 /* ----- HAMBURGER MENU ---- */
@@ -218,11 +232,6 @@ p {
   color: #ffd166;
   font-size: 2em;
 }
-@media (min-width: 1224px) {
-  .hamb-button {
-    display: none;
-  }
-}
 
 /* ----- LOGO ----- */
 .logoimg {
@@ -236,18 +245,7 @@ p {
 .logoimg p {
   display: none;
 }
-@media (min-width: 1224px) {
-  .logoimg {
-    margin: 10px 30px;
-    grid-column: 2;
-  }
 
-  .logoimg p {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-}
 .logotext p {
   margin: 0;
   text-decoration: none;
@@ -338,7 +336,7 @@ p {
   font-size: 12px;
   width: 183px;
 }
-
+/* --- FOOTER LARGE SCREENS --- */
 @media (min-width: 1224px) {
   .newsletter {
     grid-row: 1;
@@ -410,6 +408,7 @@ p {
   border-radius: 10px 10px 10px 10px;
   height: auto;
 }
+/* --- NEWS LARGE SCREEN --- */
 @media (min-width: 1224px) {
   .news-head h1 {
     margin-top: 2em;
@@ -462,27 +461,13 @@ p {
     "event2"
     "event3";
 }
-@media (min-width: 1224px) {
-  .events {
-    grid-template-areas:
-      "upcoming upcoming upcoming"
-      "event1 event2 event3";
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
-  }
-}
+
 .events-text {
   grid-area: upcoming;
   font-size: 1.2em;
 }
 .events-text h2 {
   margin-bottom: 1em;
-}
-@media (min-width: 1224px) {
-  .events-text h2 {
-    margin-bottom: 0;
-  }
 }
 .event1 {
   grid-area: event1;
@@ -500,19 +485,12 @@ p {
   display: flex;
   flex-direction: column;
   box-shadow: 5px 5px 5px grey;
+  max-width: 450px;
+  justify-self: center;
 }
-.event-def img {
-  max-width: 100%;
-  border-radius: 10px;
-  height: auto;
-}
+
 .event-def h3 {
   margin: 1em 0.5em 0 0.5em;
-}
-@media (min-width: 1224px) {
-  .event-def h3 {
-    margin: 1em 0.5em;
-  }
 }
 .event-txt {
   margin: 2em 0.5em 1em 0.5em;
@@ -539,6 +517,23 @@ p {
   object-fit: cover;
   height: 300px;
   width: 450px;
+}
+/* --- EVENTS LARGE SCREEN --- */
+@media (min-width: 1224px) {
+  .events {
+    grid-template-areas:
+      "upcoming upcoming upcoming"
+      "event1 event2 event3";
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+  }
+  .events-text h2 {
+    margin-bottom: 0;
+  }
+  .event-def h3 {
+    margin: 1em 0.5em;
+  }
 }
 
 /* ----- EXHIBITIONS SECTION ----- */
@@ -606,6 +601,7 @@ p {
 .exhibit-def h2 {
   text-align: center;
 }
+/* --- EXHIBITIONS LARGE SCREEN --- */
 @media (min-width: 1224px) {
   .exhibitions {
     grid-template-areas:
@@ -720,6 +716,21 @@ p {
   min-width: 250px;
 }
 
+.fa-star,
+.fa-chalkboard-teacher,
+.fa-microscope {
+  margin-left: 0.25em;
+}
+.ysc-txt {
+  margin-top: 4em;
+  margin-bottom: 0;
+  text-align: center;
+}
+.ysc-txt2 {
+  text-align: center;
+  margin-top: 0.5em;
+}
+/* --- EXPLORE LARGE SCREEN --- */
 @media (min-width: 1224px) {
   .kids-explore {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -759,20 +770,6 @@ p {
   .woolly-pic img {
     width: 100%;
   }
-}
-.fa-star,
-.fa-chalkboard-teacher,
-.fa-microscope {
-  margin-left: 0.25em;
-}
-.ysc-txt {
-  margin-top: 4em;
-  margin-bottom: 0;
-  text-align: center;
-}
-.ysc-txt2 {
-  text-align: center;
-  margin-top: 0.5em;
 }
 
 /* ----- VISIT SECTION ----- */
@@ -891,6 +888,7 @@ p {
   padding-left: 0;
   list-style: none;
 }
+/* --- VIIST LARGE SCREEN --- */
 @media (min-width: 1224px) {
   .visit-main {
     display: grid;
@@ -945,19 +943,7 @@ p {
   gap: 1em;
   margin-bottom: 4em;
 }
-@media (min-width: 1224px) {
-  .support-main {
-    grid-template-areas:
-      "get-involved get-involved"
-      "support1 volunteer"
-      "internships contact";
-    grid-template-columns: auto auto;
-  }
-  .support1,
-  .support2 {
-    margin-bottom: 2em;
-  }
-}
+
 .involved-txt {
   grid-area: get-involved;
 }
@@ -1003,6 +989,20 @@ p {
   border-radius: 10px;
   margin-top: 1em;
 }
+/* --- GET INVOLVED LARGE SCREEN --- */
+@media (min-width: 1224px) {
+  .support-main {
+    grid-template-areas:
+      "get-involved get-involved"
+      "support1 volunteer"
+      "internships contact";
+    grid-template-columns: auto auto;
+  }
+  .support1,
+  .support2 {
+    margin-bottom: 2em;
+  }
+}
 
 /* ----- CONTACT SECTION ----- */
 /* ------------------------ */
@@ -1040,24 +1040,6 @@ p {
   align-self: center;
 }
 
-@media (min-width: 1224px) {
-  .contact-txt {
-    margin-top: 2em;
-  }
-  .contact1 {
-    max-width: 800px;
-    min-width: 600px;
-  }
-  .contact-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contact-social ul {
-    font-size: 1.2em;
-    margin-bottom: 4em;
-  }
-}
 .contact-social {
   display: flex;
   justify-content: center;
@@ -1092,6 +1074,25 @@ p {
 .contact1 label {
   margin-bottom: 0;
   font-size: 0.9em;
+}
+/* --- CONTACT LARGE SCREEN --- */
+@media (min-width: 1224px) {
+  .contact-txt {
+    margin-top: 2em;
+  }
+  .contact1 {
+    max-width: 800px;
+    min-width: 600px;
+  }
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-social ul {
+    font-size: 1.2em;
+    margin-bottom: 4em;
+  }
 }
 
 /* ----- CONTACT FORM VALIDATION ----- */
