@@ -339,6 +339,13 @@ p {
   font-size: 12px;
   width: 183px;
 }
+#email-sub-error {
+  color: rgb(255, 112, 112);
+  font-size: 12px;
+  text-align: center;
+  display: none;
+  height: 30px;
+}
 /* --- FOOTER LARGE SCREENS --- */
 @media (min-width: 1224px) {
   .newsletter {

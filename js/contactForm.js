@@ -45,7 +45,7 @@ function validateForm(event) {
   if (checkLength(contactSelect.value, 1) && checkLength(contactName.value, 3) && checkLength(contactTel.value, 8) && validateEmail(contactMail.value) && checkLength(contactMsg.value, 10)) {
     form.innerHTML = `<div class="contact-form-success">Your message has been sent</div>`;
   } else {
-    console.log("NO");
+    form.innerHTML = `<div class="contact-form-success">An error occured when trying to submit your form. Please try again.</div>`;
   }
 }
 

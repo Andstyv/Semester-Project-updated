@@ -6,8 +6,6 @@ async function getEvents(url) {
     const response = await fetch(url);
     const events = await response.json();
 
-    console.log(events);
-
     events.forEach(function (event, index) {
       const eventIMG = event._embedded["wp:featuredmedia"][0].source_url;
       const eventIMGAlt = event._embedded["wp:featuredmedia"][0].alt_text;
